@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
-import { refreshUser } from 'redux/auth/operations';
+import { refreshUser } from '../redux/auth/operations';
 import { useAuth } from 'hooks';
 
 const HomePage = lazy(() => import('../pages/Home'));
@@ -27,19 +27,19 @@ export const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route
-          path="/register"
+          path="register"
           element={
             <RestrictedRoute redirectTo="/tasks" component={<RegisterPage />} />
           }
         />
         <Route
-          path="/login"
+          path="login"
           element={
             <RestrictedRoute redirectTo="/tasks" component={<LoginPage />} />
           }
         />
         <Route
-          path="/tasks"
+          path="tasks"
           element={
             <PrivateRoute redirectTo="/login" component={<TasksPage />} />
           }
