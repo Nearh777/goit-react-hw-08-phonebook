@@ -117,7 +117,3 @@
 //! Utility to add JWT
 
 //! Utility to remove JWT
-
-//! МОЙ вариант:
-
-//! вариант Репеты:
