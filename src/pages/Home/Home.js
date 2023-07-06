@@ -13,12 +13,12 @@ export default function Home() {
             <h1 className={css.title}>
                 <span className={css.spanName} role="img" aria-label="Greeting icon">
                     💁 {isLoggedIn ? user.name : "Register or Log In"}
-                    {/* {isLoading ? [<Spinner size="18" />, " Editing..."] : "Edit"} */}
+                    
                     <br />
                 </span>
-                Welcome to the HW-8
+                Welcome to the PHONEBOOK
                 <span className={css.spanWith}>
-                    &nbsp;(with createAsyncThunk)
+                    
                 </span>
             </h1>
         </div>

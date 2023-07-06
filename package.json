@@ -4,8 +4,10 @@
   "private": true,
   "homepage": "https://Nearh777.github.io/goit-react-hw-08-phonebook/",
   "dependencies": {
+    "@emotion/is-prop-valid": "^1.2.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@emotion/styled.macro": "^0.10.6",
     "@mui/material": "^5.13.6",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.3",
@@ -15,6 +17,7 @@
     "jsonwebtoken": "^9.0.1",
     "modern-normalize": "^2.0.0",
     "pg": "^8.11.1",
+    "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",

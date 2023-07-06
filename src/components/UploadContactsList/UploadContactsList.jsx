@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { deleteContactFromMmockapiIo } from 'redux/contacts/contactsOperations';
 
-import css from 'components/UploadContactsList/UploadContactsList.module.css' 
+import css from './UploadContactsList.module.css'; 
 
 
 
@@ -44,7 +44,7 @@ return (
 
 UploadContactsList.propTypes = {
   uploadContacts: PropTypes.array.isRequired
-  // onDeleteTodo: PropTypes.func.isRequired,
+  
 };
 
 

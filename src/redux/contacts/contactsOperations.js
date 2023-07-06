@@ -87,7 +87,7 @@ export const fetchContactsFromMmockapiIo = createAsyncThunk(
     'contacts/fetchContactsFromMmockapiIo',
     async (_, { rejectWithValue }) => {
         try {
-            const { data } = await axios.get('https://6326c1ee70c3fa390f9bc51d.mockapi.io/contacts');
+            const { data } = await axios.get('https://649bd2f0048075719236fa98.mockapi.io/contacts');
             // console.log("contacts/fetchContactsFromMmockapiIo==>data:", data); //!
             return data;
         } catch (error) {
@@ -104,7 +104,7 @@ export const deleteContactFromMmockapiIo = createAsyncThunk(
     async (contactId, thunkAPI) => {
         try {
             // console.log("contacts/deleteContactFromMmockapiIo==>contactId:", contactId); //!
-            await axios.delete(`https://6326c1ee70c3fa390f9bc51d.mockapi.io/contacts/${contactId}`);
+            await axios.delete(`https://649bd2f0048075719236fa98.mockapi.io/contacts/${contactId}`);
             return contactId;
         } catch (error) {
             console.log(error); //!
@@ -117,17 +117,3 @@ export const deleteContactFromMmockapiIo = createAsyncThunk(
 
 
 
-// export const AddUploadContacts = createAsyncThunk(
-//     'contacts/AddUploadContacts',
-//     async (_, { rejectWithValue }) => {
-//         try {
-//             const uploadContacts = await axios.get('https://6326c1ee70c3fa390f9bc51d.mockapi.io/contacts');
-//             console.log("uploadContactsOperations-axiosGet ==> uploadContacts:", uploadContacts.data); //!
-//             return uploadContacts.data;
-//         } catch (error) {
-//             console.log(error);
-//             toast.error(`Ошибка запроса: ${error.message}`, { position: "top-center", autoClose: 2000 });
-//             return rejectWithValue(error.message);
-//         }
-//     },
-// );

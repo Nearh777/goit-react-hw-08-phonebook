@@ -12,9 +12,9 @@ import {
 } from 'redux-persist';
 
 import storage from 'redux-persist/lib/storage';
-import { authReducer } from 'redux/auth/authSlice';
-import { contactsReducer } from 'redux/contacts/contactsSlice';
-import { filterSlice } from 'redux/filter/filterSlice';
+import { authReducer } from './auth/authSlice';
+import { contactsReducer } from './contacts/contactsSlice';
+import { filterSlice } from './filter/filterSlice';
 // import { uploadContactsReducer } from 'redux/uploadContacts/uploadContactsSlice';
 
 

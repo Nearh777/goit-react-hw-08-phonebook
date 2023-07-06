@@ -1,12 +1,9 @@
-// import axios from 'axios';
-// import { useState } from 'react';
-// import { useEffect } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from "react-router-dom";
 
 import { fetchContactsFromMmockapiIo, addContact } from 'redux/contacts/contactsOperations';
-// import { getUploadContacts } from 'redux/uploadContacts/uploadContactsSelectors';
+
 import { selectLoading, selectAllContacts, getUploadContacts } from 'redux/contacts/contactsSelectors';
 
 import { Container } from 'components/Container/Container';
@@ -32,14 +29,7 @@ export default function UploadContacts() {
   const totalUploadContacts = uploadContacts.length;
 
 
-  // useEffect(() => {
-  //   dispatch(fetchContactsFromMmockapiIo());
-  // }, [dispatch]);
-
-  //! добавлен сразу в onClick ==> Upload contacts from mockapi.io
-  // const handlUploadContacts = () => dispatch(fetchContactsFromMmockapiIo());
-
-  const handlAddUploadContacts = () => {
+    const handlAddUploadContacts = () => {
     for (const uploadContact of uploadContacts) {
       const name = uploadContact.name;
       const number = uploadContact.number;

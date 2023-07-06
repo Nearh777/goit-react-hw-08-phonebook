@@ -6,12 +6,9 @@ import { store, persistor } from './redux/store';
 import { BrowserRouter } from 'react-router-dom';
 import 'modern-normalize';
 
-import { App } from 'components/App';
+import { App } from './components/App';
 
 import 'styles/styles.css';
-
-
-
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

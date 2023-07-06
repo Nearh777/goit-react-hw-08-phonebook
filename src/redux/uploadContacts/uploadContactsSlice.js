@@ -20,11 +20,7 @@ const uploadContactsSlice = createSlice({
             return newUploadContacts;
         },
 
-        // [logOut.fulfilled](state) {
-        //     state.items = [];
-        //     state.error = null;
-        //     state.isLoading = false;
-        // },
+      
     },
 });
 
